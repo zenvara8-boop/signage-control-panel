@@ -20,6 +20,13 @@ Admin mengelola perangkat, konten, dan playlist lewat dashboard. Status online/o
 
 ## Arsitektur
 
+```mermaid
+![Layar device](docs/device-screen.png)
+```mermaid
+```
+
+Ganti dengan:
+
 ## Tampilan
 
 ### Dashboard: status perangkat real-time
@@ -33,7 +40,7 @@ Admin mengelola perangkat, konten, dan playlist lewat dashboard. Status online/o
 
 ### Layar device
 ![Layar device](docs/device-screen.png)
-```mermaid
+
 flowchart LR
   subgraph Browser
     D[Dashboard admin<br/>React]
