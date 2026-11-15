@@ -1,0 +1,13 @@
+{
+  "name": "signage-control-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Signage Control Panel: admin dashboard, REST API, WebSocket server, and device client",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix dashboard install && npm --prefix device-client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:dashboard": "npm --prefix dashboard run dev",
+    "dev:device": "npm --prefix device-client run dev",
+    "seed": "npm --prefix server run seed"
+  }
+}
