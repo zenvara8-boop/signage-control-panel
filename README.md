@@ -41,6 +41,11 @@ Ganti dengan:
 ### Layar device
 ![Layar device](docs/device-screen.png)
 
+![Layar device](docs/device-screen.png)
+
+## Arsitektur
+
+```mermaid
 flowchart LR
   subgraph Browser
     D[Dashboard admin<br/>React]
@@ -58,7 +63,7 @@ flowchart LR
   C -- "GET /api/public/devices" --> R
   R --> S
   W --> S
-  R -- "push / playlist update" --> W
+  R -- "push / playlist update" --> 
 ```
 
 Alur status real-time: device membuka socket, server menandai `online` di database lalu mem-broadcast `device:status` ke semua admin. Saat socket putus (tab ditutup, jaringan mati, atau tidak membalas heartbeat), server menandai `offline` dan mem-broadcast lagi.
