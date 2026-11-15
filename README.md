@@ -20,6 +20,19 @@ Admin mengelola perangkat, konten, dan playlist lewat dashboard. Status online/o
 
 ## Arsitektur
 
+## Tampilan
+
+### Dashboard: status perangkat real-time
+![Dashboard perangkat](docs/dashboard-devices.png)
+
+### Dashboard: manajemen konten
+![Dashboard konten](docs/dashboard-contents.png)
+
+### Dashboard: editor playlist
+![Editor playlist](docs/dashboard-playlist.png)
+
+### Layar device
+![Layar device](docs/device-screen.png)
 ```mermaid
 flowchart LR
   subgraph Browser
