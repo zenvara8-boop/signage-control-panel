@@ -19,13 +19,10 @@ Admin mengelola perangkat, konten, dan playlist lewat dashboard. Status online/o
 - [x] Reconnection di device client (exponential backoff, cache playlist offline) dan di dashboard
 
 ## Arsitektur
-
-```mermaid
 ![Layar device](docs/device-screen.png)
 ```mermaid
 ```
 
-Ganti dengan:
 
 ## Tampilan
 
@@ -44,8 +41,8 @@ Ganti dengan:
 ![Layar device](docs/device-screen.png)
 
 ## Arsitektur
-
 ```mermaid
+```
 flowchart LR
   subgraph Browser
     D[Dashboard admin<br/>React]
@@ -63,8 +60,8 @@ flowchart LR
   C -- "GET /api/public/devices" --> R
   R --> S
   W --> S
-  R -- "push / playlist update" --> 
-```
+  R -- "push / playlist update" --> W
+
 
 Alur status real-time: device membuka socket, server menandai `online` di database lalu mem-broadcast `device:status` ke semua admin. Saat socket putus (tab ditutup, jaringan mati, atau tidak membalas heartbeat), server menandai `offline` dan mem-broadcast lagi.
 
